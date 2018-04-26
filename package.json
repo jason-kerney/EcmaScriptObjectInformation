@@ -1,0 +1,27 @@
+{
+  "name": "object-information",
+  "version": "0.0.0",
+  "description": "gets information about an object in an approvable string",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha ./tests/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JKerney-HunterIndustries/EcmaScriptObjectInformation.git"
+  },
+  "author": "Willem Larsen & Jason Kerney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JKerney-HunterIndustries/EcmaScriptObjectInformation/issues"
+  },
+  "homepage": "https://github.com/JKerney-HunterIndustries/EcmaScriptObjectInformation#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1"
+  },
+  "dependencies": {
+    "dject": "^1.9.3",
+    "signet": "^6.6.3"
+  }
+}
