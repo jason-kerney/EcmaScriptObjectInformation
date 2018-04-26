@@ -19,31 +19,31 @@ function objectInformation() {
         };
     }
 
-    function prettyJsonAndSignature(value, showSignature) {
+    function asInformationStringWithRegardForSignature(value, showSignature) {
         return JSON.stringify(value, preprocessValues(showSignature), 4);
     }
 
-    function prettyJsonWithSignature(value) {
-        return prettyJsonAndSignature(value, true);
+    function asInformationString(value) {
+        return asInformationStringWithRegardForSignature(value, true);
     }
 
-    function prettyJson(value) {
-        return prettyJsonAndSignature(value, false);
+    function asBasicInformationString(value) {
+        return asInformationStringWithRegardForSignature(value, false);
     }
 
-    function asJson(value, indent) {
+    function asJsonString(value, indent) {
         return JSON.stringify(value, null, indent);
     }
 
-    function asFormattedJson(value) {
-        return asJson(value, 4);
+    function asFormattedJsonString(value) {
+        return asJsonString(value, 4);
     }
 
     return {
-        asJson,
-        asFormattedJson,
-        prettyJson,
-        prettyJsonWithSignature,
+        asJsonString,
+        asFormattedJsonString,
+        asBasicInformationString,
+        asInformationString,
     };
 }
 
