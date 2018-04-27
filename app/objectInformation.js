@@ -1,6 +1,8 @@
 'use strict';
 
-function objectInformation() {
+function objectInformation(
+    signet
+) {
     function getFunctionName(value, showSignature) {
         let functionName = value.name === '' ? 'anonymous function' : value.name;
         let functionSignature = Boolean(value.signature) ? ` [${value.signature}]` : ' [* => *]';
@@ -9,13 +11,23 @@ function objectInformation() {
         return `Function: ${functionName}${functionSignature}`;
     }
 
-    function functionToName(value, showSignature) {
-        return typeof value === 'function' ? getFunctionName(value, showSignature) : value;
+    function getObjectType(value) {
+        return Object.prototype.toString.apply(value);
+    }
+
+    function getStringifiableValue(value, showSignature) {
+        if (typeHelper.isTypeOf('function')(value)) {
+            return getFunctionName(value, showSignature);
+        } else if (typeHelper.isTypeOf('error')(value)) {
+            return value.toString();
+        } else {
+            return value;
+        };
     }
 
     function preprocessValues(showSignature) {
         return function (key, value) {
-            return functionToName(value, showSignature);
+            return getStringifiableValue(value, showSignature);
         };
     }
 
