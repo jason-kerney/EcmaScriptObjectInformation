@@ -1,0 +1,11 @@
+{
+    "a String property": "this is a string",
+    "an error property": {},
+    "a number property": 42,
+    "an array property": [
+        "life",
+        "universe",
+        "everything",
+        42
+    ]
+}

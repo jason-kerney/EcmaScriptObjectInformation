@@ -11,18 +11,14 @@ function objectInformation(
         return `Function: ${functionName}${functionSignature}`;
     }
 
-    function getObjectType(value) {
-        return Object.prototype.toString.apply(value);
-    }
-
     function getStringifiableValue(value, showSignature) {
-        if (typeHelper.isTypeOf('function')(value)) {
+        if (signet.isTypeOf('function')(value)) {
             return getFunctionName(value, showSignature);
-        } else if (typeHelper.isTypeOf('error')(value)) {
+        } else if (signet.isTypeOf('error')(value)) {
             return value.toString();
         } else {
             return value;
-        };
+        }
     }
 
     function preprocessValues(showSignature) {

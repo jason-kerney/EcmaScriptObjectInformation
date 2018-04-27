@@ -1,0 +1,12 @@
+{
+    "a String property": "this is a string",
+    "an error property": "Error: this is an error",
+    "a number property": 42,
+    "an enforced function": "Function: enforceDecorator",
+    "an array property": [
+        "life",
+        "universe",
+        "everything",
+        42
+    ]
+}
