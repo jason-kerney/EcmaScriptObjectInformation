@@ -40,7 +40,7 @@ const informationString = asInformationString(testObject);
 The variable 'inforamtionString' contains:
 
 ```JavaScript
-'{
+`{
     "a String property": "this is a string",
     "an error property": "Error: this is an error",
     "a number property": 42,
@@ -51,7 +51,7 @@ The variable 'inforamtionString' contains:
         "everything",
         42
     ]
-}'
+}`
 ```
 
 ---
@@ -61,7 +61,7 @@ The variable 'inforamtionString' contains:
 The method 'asBasicInformationString' removes the function signatures.
 
 ```JavaScript
-'{
+`{
     "a String property": "this is a string",
     "an error property": "Error: this is an error",
     "a number property": 42,
@@ -72,7 +72,7 @@ The method 'asBasicInformationString' removes the function signatures.
         "everything",
         42
     ]
-}'
+}`
 ```
 
 ---
@@ -82,7 +82,7 @@ The method 'asBasicInformationString' removes the function signatures.
 The method 'asFormattedJsonString' is just a wrapper arround ```JSON.stringify(value, null, 4);```.
 
 ```JavaScript
-'{
+`{
     "a String property": "this is a string",
     "an error property": {},
     "a number property": 42,
@@ -92,7 +92,7 @@ The method 'asFormattedJsonString' is just a wrapper arround ```JSON.stringify(v
         "everything",
         42
     ]
-}'
+}`
 ```
 
 ---
@@ -104,7 +104,7 @@ The method 'asJsonString' allows you to determine the indent.
 The call ```asJsonString(testObject, 2);``` returns:
 
 ```JavaScript
-'{
+`{
   "a String property": "this is a string",
   "an error property": {},
   "a number property": 42,
@@ -114,7 +114,7 @@ The call ```asJsonString(testObject, 2);``` returns:
     "everything",
     42
   ]
-}'
+}`
 ```
 
 Where as the call ```sJsonString(testObject);``` returns:
