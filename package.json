@@ -1,6 +1,6 @@
 {
   "name": "object-information",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "gets information about an object in an approvable string",
   "main": "index.js",
   "scripts": {
