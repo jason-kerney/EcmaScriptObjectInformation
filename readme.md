@@ -1,5 +1,15 @@
 # object-information
 
+<a href='https://www.npmjs.com/package/object-information'>
+    <img src='https://img.shields.io/npm/v/object-information.svg?link=https://www.npmjs.com/package/object-information&?link=https://www.npmjs.com/package/object-information' alt='NPM Version' /> 
+</a> <a href='https://npm-stat.com/charts.html?package=object-information'>
+    <img src='https://img.shields.io/npm/dt/object-information.svg' alt='NPM Downloads'/>
+</a> <a href='https://opensource.org/licenses/MIT'>
+    <img src='https://img.shields.io/npm/l/object-information.svg' alt='License MIT'/>
+</a> <a href='https://david-dm.org/JKerney-HunterIndustries/object-information'>
+    <img src='https://david-dm.org/JKerney-HunterIndustries/object-information.svg' alt='Dependencies' />
+</a>
+
 **What?**
 
 Object Information is a library that returns a formatted string with informarion about what an object contains.
