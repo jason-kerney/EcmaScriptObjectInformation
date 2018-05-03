@@ -3,6 +3,8 @@
     "an error property": "Error: this is an error",
     "a number property": 42,
     "an enforced function": "Function: enforceDecorator [a:number, b:int => number]",
+    "a function who is not enforced": "Function: notEnforcedFunction",
+    "an anonymous function": "Function: an anonymous function",
     "an array property": [
         "life",
         "universe",

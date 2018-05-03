@@ -5,7 +5,7 @@ function objectInformation(
 ) {
     function getFunctionName(value, showSignature) {
         let functionName = value.name === '' ? 'anonymous function' : value.name;
-        let functionSignature = Boolean(value.signature) ? ` [${value.signature}]` : ' [* => *]';
+        let functionSignature = Boolean(value.signature) ? ` [${value.signature}]` : '';
         functionSignature = showSignature ? functionSignature : '';
 
         return `Function: ${functionName}${functionSignature}`;
