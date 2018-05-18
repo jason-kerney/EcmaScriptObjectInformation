@@ -59,4 +59,14 @@ describe('objectInformation', function () {
     it('asInformationString', function () {
         this.verify(objectInformation.asInformationString(testObject));
     });
+
+    it('asGridString', function () {
+        const data = [
+            [1, 2, null],
+            [4, undefined, 5],
+            [6, { property: 7 }, 8]
+        ];
+
+        this.verify(objectInformation.asGridString(data));
+    });
 });
