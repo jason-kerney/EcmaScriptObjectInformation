@@ -132,3 +132,25 @@ Where as the call ```sJsonString(testObject);``` returns:
 ```JavaScript
 '{"a String property":"this is a string","an error property":{},"a number property":42,"an array property":["life","universe","everything",42]}'
 ```
+
+## asGridString
+
+The method 'asGridString' takes in an array of arrays, and then prints returns it as a grid.
+
+```JavaScript
+const data = [
+    [1, 2, null],
+    [4, undefined, 5],
+    [6, { property: 7 }, 8]
+];
+
+asGridString(data);
+```
+
+This call returns:
+
+```
+.......1........|.......2........|......null......
+.......4........|.."undefined"...|.......5........
+.......6........|.{"property":7}.|.......8........
+```
