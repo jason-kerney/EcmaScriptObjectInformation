@@ -53,6 +53,16 @@ function objectInformation(
         return asJsonString(value, 4);
     }
 
+    function createPad(count, padString) {
+        let result = '';
+        
+        for (let index = 0; index < count; index++) {
+            result += padString;
+        }
+
+        return result;
+    }
+
     function asGridString(data) {
         const stringData = (
             data
@@ -91,8 +101,8 @@ function objectInformation(
                                 const basicPadding = Math.floor(lengthDiff / 2);
                                 const remainder = lengthDiff - (2 * basicPadding);
 
-                                const frontPadding = ''.padStart(basicPadding, '.');
-                                const backPadding = ''.padStart(basicPadding + remainder, '.');
+                                const frontPadding = createPad(basicPadding, '.');
+                                const backPadding = createPad(basicPadding + remainder, '.');
 
                                 return `${frontPadding}${datum}${backPadding}`;
                             })
